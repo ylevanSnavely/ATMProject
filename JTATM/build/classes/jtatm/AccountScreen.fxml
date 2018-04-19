@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="399.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jtatm.AccountScreenController">
+   <children>
+      <Label layoutX="83.0" layoutY="80.0" prefHeight="43.0" prefWidth="245.0" text="Account Summary" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="185.0" prefHeight="29.0" prefWidth="87.0" text="Balance:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="DepositBtn" fx:id="DepositBtn" layoutX="46.0" layoutY="300.0" mnemonicParsing="false" onAction="#DepositBtnClicked" prefHeight="43.0" prefWidth="117.0" style="-fx-background-color: #151928;" text="Deposit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button id="WithdrawBtn" fx:id="WithdrawBtn" layoutX="234.0" layoutY="300.0" mnemonicParsing="false" onAction="#WithdrawBtnClicked" prefHeight="43.0" prefWidth="117.0" style="-fx-background-color: #151928;" text="Withdraw" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label id="BalanceTxt" fx:id="BalanceTxt" alignment="CENTER_RIGHT" layoutX="184.0" layoutY="185.0" prefHeight="29.0" prefWidth="101.0" text="\$$$$$$" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button id="LogoutBtn" fx:id="LogoutBtn" layoutX="111.0" layoutY="421.0" mnemonicParsing="false" onAction="#LogoutBtnClicked" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: #151928;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
